@@ -1,0 +1,29 @@
+{
+  "name": "angular-timeago",
+  "description": "AngularJs directive timeago service.",
+  "main": [
+    "dist/css/timeago.css",
+    "dist/js/angular-timeago.js"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": ["timeago","angularjs"],
+  "homepage": "https://github.com/afeiship/angular-timeago",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ],
+  "dependencies": {
+    "angular": "*",
+    "angular-module-stiffener": "afeiship/angular-module-stiffener"
+  }
+}
