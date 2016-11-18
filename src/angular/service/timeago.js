@@ -15,11 +15,7 @@
     '$sce',
     function($rootScope, $timeout, $compile, $sce) {
 
-      return {
-        format: format
-      };
-
-      function format(inValue) {
+      return function format(inValue) {
         var today = new Date();
         var publish = (new Date(String(inValue).replace(/-/g, '/')));
         var todayTs = today.getTime();
@@ -28,7 +24,7 @@
         var isToday = publish.getDate() == today.getDate();
         var isYesterday = new Date(yesterdayTs).getDate() === publish.getDate();
         var isYear = publish.getYear() == today.getYear();
-        
+
         var diff_s = (todayTs - publishTs) / 1000;
         var diff_m = diff_s / 60;
         var diff_h = diff_m / 60;
