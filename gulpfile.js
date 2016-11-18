@@ -65,5 +65,5 @@ gulp.task('scripts', function () {
 });
 
 gulp.task('default', ['clean'], function () {
-  gulp.start(['sass', 'scripts']);
+  gulp.start(['sass']);
 });

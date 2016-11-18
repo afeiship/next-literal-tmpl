@@ -2,7 +2,6 @@
   "name": "angular-timeago",
   "description": "AngularJs directive timeago service.",
   "main": [
-    "dist/css/timeago.css",
     "dist/js/angular-timeago.js"
   ],
   "authors": [
