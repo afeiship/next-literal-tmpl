@@ -9,7 +9,7 @@
   var jqLite = angular.element;
 
   angular.module('nx.widget')
-    .filter('nxToTimeago', nxTimeago);
+    .filter('nxToTimeago', nxToTimeago);
 
   function nxToTimeago(nxTimeago) {
     return function (inTime) {
