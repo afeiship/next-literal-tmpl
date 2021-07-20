@@ -1,20 +1,34 @@
-#angular-timeago
-> AngularJs directive timeago service.
+# next-literal-tmpl
+> Literals template engine like es6.
 
-##usage:
-+ bower install `afeiship/angular-timeago --save`
+[![version][version-image]][version-url]
+[![license][license-image]][license-url]
+[![size][size-image]][size-url]
+[![download][download-image]][download-url]
 
-
-## description:
-```conf
-以下顺序选择显示规则：
-1、60秒内：刚刚；
-2、60分钟内：XX分钟前；
-3、今天：X小时前
-4、昨天：昨天 04:25
-5、今年内：1-22 02:23
-6、往年的：2010-1-22
+## installation
+```bash
+npm install -S @jswork/next-literal-tmpl
 ```
 
-##demo:
-+ https://github.com/afeiship/angular-timeago/blob/master/test/test.html
+## usage
+```js
+import '@jswork/next-literal-tmpl';
+
+//DOCS here!
+```
+
+## license
+Code released under [the MIT license](https://github.com/afeiship/next-literal-tmpl/blob/master/LICENSE.txt).
+
+[version-image]: https://img.shields.io/npm/v/@jswork/next-literal-tmpl
+[version-url]: https://npmjs.org/package/@jswork/next-literal-tmpl
+
+[license-image]: https://img.shields.io/npm/l/@jswork/next-literal-tmpl
+[license-url]: https://github.com/afeiship/next-literal-tmpl/blob/master/LICENSE.txt
+
+[size-image]: https://img.shields.io/bundlephobia/minzip/@jswork/next-literal-tmpl
+[size-url]: https://github.com/afeiship/next-literal-tmpl/blob/master/dist/next-literal-tmpl.min.js
+
+[download-image]: https://img.shields.io/npm/dm/@jswork/next-literal-tmpl
+[download-url]: https://www.npmjs.com/package/@jswork/next-literal-tmpl
