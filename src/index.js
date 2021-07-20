@@ -5,6 +5,7 @@
   var EMPTY_STR = '';
 
   nx.literalTmpl = function (inString, inContext) {
+    if (!inContext) return inString;
     var result = inString || EMPTY_STR;
     var replaceFn = function (_, match) {
       var path = match.trim();
