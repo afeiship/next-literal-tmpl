@@ -15,7 +15,14 @@ npm install -S @jswork/next-literal-tmpl
 ```js
 import '@jswork/next-literal-tmpl';
 
-//DOCS here!
+const str = '${GITHUB_API_TOKEN} - ${afei}';
+const ctx = {
+  GITHUB_API_TOKEN: 'xxx-yyy-zzz',
+  afei: 'zhengfei'
+};
+nx.literalTmpl(str, ctx);
+
+// 'xxx-yyy-zzz - zhengfei'
 ```
 
 ## license
