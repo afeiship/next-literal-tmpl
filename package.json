@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-literal-tmpl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Literals template engine like es6.",
   "homepage": "https://github.com/afeiship/next-literal-tmpl",
   "author": {
