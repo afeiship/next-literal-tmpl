@@ -35,12 +35,13 @@
     test('${{name}} no blank should work fine', () => {
       var str = '${GITHUB_API_TOKEN} - ${afei}';
       var ctx = {
-        GITHUB_API_TOKEN: 'xxx-yyy-zzz',
+        sec_key: 'sec_key_value',
+        GITHUB_API_TOKEN: 'xxx-yyy-zzz ${sec_key}',
         afei: 'zhengfei'
       };
 
       var res = nx.literalTmpl(str, ctx);
-      expect(res).toBe('xxx-yyy-zzz - zhengfei');
+      expect(res).toBe('xxx-yyy-zzz sec_key_value - zhengfei');
     });
   });
 })();

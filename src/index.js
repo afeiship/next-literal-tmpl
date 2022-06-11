@@ -11,7 +11,9 @@
       var path = match.trim();
       return nx.get(inContext, path) || EMPTY_STR;
     };
-    return result.replace(FORMAT_RE, replaceFn);
+    var res = result.replace(FORMAT_RE, replaceFn);
+    var hasTpl = FORMAT_RE.test(res);
+    return hasTpl ? nx.literalTmpl(res, inContext) : res;
   };
 
   if (typeof module !== 'undefined' && module.exports) {
