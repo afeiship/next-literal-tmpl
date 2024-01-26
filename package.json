@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-literal-tmpl",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Literals template engine like es6.",
   "homepage": "https://js.work",
   "author": {
@@ -42,5 +42,14 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://registry.npmjs.org"
-  }
+  },
+  "keywords": [
+    "next",
+    "template",
+    "tmpl",
+    "literal",
+    "es6",
+    "es5",
+    "js"
+  ]
 }
